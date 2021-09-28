@@ -31,6 +31,7 @@ class Main extends PluginBase implements Listener {
     if(!$this->check->exists($name)) {
         $this->check->set($name, true);
         $this->check->save();
+	$this->config->save();
 	$player = $ev->getPlayer();
 	$inv = $player->getInventory();  
 	$item = Item::get($cfg->get("item1"));
