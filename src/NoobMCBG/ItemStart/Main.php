@@ -14,7 +14,7 @@ use pocketmine\event\player\PlayerJoinEvent;
 
 class Main extends PluginBase implements Listener {
 
-   public cfg;
+   public $cfg;
     
    public function onEnable() {
       @mkdir($this->getDataFolder());
@@ -24,7 +24,6 @@ class Main extends PluginBase implements Listener {
       $cfg->save();
       $this->check = new Config($this->getDataFolder()."check.yml",Config::YAML);
       $this->getLogger()->info("Enable Plugin");
-      $this->getServer()->getPluginManager()->registerEvents($this ,$this);
    }
 
    public function onJoin(PlayerJoinEvent $ev) {
