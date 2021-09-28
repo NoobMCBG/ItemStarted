@@ -11,9 +11,7 @@ use pocketmine\command\{Command, CommandSender, ConsoleCommandSender};
 use pocketmine\event\player\{PlayerJoinEvent, PlayerQuitEvent};
 
 class Main extends PluginBase implements Listener {
-
-   public cfg;
-    
+   
    public function onEnable() {
       @mkdir($this->getDataFolder());
       $this->getServer()->getPluginManager()->registerEvents($this,$this);
