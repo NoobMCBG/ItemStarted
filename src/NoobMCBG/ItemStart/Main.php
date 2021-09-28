@@ -1,4 +1,6 @@
-﻿<?php
+<?php
+
+declare(strict_types=1);
 
 namespace NoobMCBG\ItemStart;
 
@@ -8,7 +10,7 @@ use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
 use pocketmine\item\Item;
 use pocketmine\command\{Command, CommandSender, ConsoleCommandSender};
-use pocketmine\event\player\{PlayerJoinEvent, PlayerQuitEvent};
+use pocketmine\event\player\PlayerJoinEvent;
 
 class Main extends PluginBase implements Listener {
 
